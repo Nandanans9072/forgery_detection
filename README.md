@@ -18,11 +18,22 @@ forgery_detection/
 ├── train.py                      # Training script
 ├── vit_forgery_finetuned.pth    # Pre-trained model weights
 ├── requirements.txt              # Python dependencies
-├── dataset/
+├── dataset/                      # Dataset folder (not included - download separately)
 │   ├── authentic/               # Authentic image samples
 │   └── tampered/                # Tampered/forged image samples
 └── README.md                     # This file
 ```
+
+## Dataset
+
+The image forgery dataset is stored on **Kaggle** and must be downloaded separately due to size constraints (147 MB).
+
+**Download Dataset from Kaggle:**
+- **Dataset Link:** [Image Forgery Detection Dataset - Splicing](https://www.kaggle.com/datasets/prajnar3/image-forgery-detection-dataset-splicing)
+- **Size:** ~147 MB
+- **Structure:** Authentic and Tampered images
+
+After downloading, extract it to maintain the folder structure as shown above.
 
 ## Installation
 
@@ -42,6 +53,30 @@ forgery_detection/
    ```bash
    pip install -r requirements.txt
    ```
+
+4. **Download the Dataset**
+   
+   The dataset is hosted on Kaggle and needs to be downloaded separately due to size constraints.
+   
+   **Option A: Using Kaggle CLI**
+   ```bash
+   # Install Kaggle CLI
+   pip install kaggle
+   
+   # Download dataset (replace DATASET_NAME with actual Kaggle dataset)
+   kaggle datasets download -d [DATASET_ID]
+   unzip [dataset].zip
+   ```
+   
+   **Option B: Manual Download**
+   - Visit: [Image Forgery Detection Dataset - Splicing](https://www.kaggle.com/datasets/prajnar3/image-forgery-detection-dataset-splicing)
+   - Download and extract the dataset
+   - Place contents in the `dataset/` folder with structure:
+     ```
+     dataset/
+     ├── authentic/
+     └── tampered/
+     ```
 
 ## Usage
 
