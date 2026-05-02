@@ -178,21 +178,7 @@ See `requirements.txt` for specific versions.
 4. Forward pass through ViT model
 5. Return prediction (authentic/tampered) with confidence
 
-## Limitations
 
-- Performance depends on dataset quality and diversity
-- May struggle with subtle forgeries or very common editing techniques
-- Works best with standard image formats (JPEG, PNG)
-- Processing time depends on available hardware
-
-## Future Improvements
-
-- [ ] Multi-class classification (authentic, splicing, copy-move, etc.)
-- [ ] Attention visualization for interpretability
-- [ ] Grad-CAM for forgery localization
-- [ ] Support for video forgery detection
-- [ ] Model quantization for faster inference
-- [ ] Batch processing capability
 
 ## Troubleshooting
 
@@ -209,18 +195,4 @@ See `requirements.txt` for specific versions.
 - Clear cache: `streamlit cache clear`
 - Reinstall streamlit: `pip install --upgrade streamlit`
 
-## License
 
-This project is open source and available under the MIT License.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Contact
-
-For questions or issues, please open an issue on GitHub.
-
----
-
-**Built with ❤️ using Vision Transformers and PyTorch**
